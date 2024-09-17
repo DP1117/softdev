@@ -34,6 +34,7 @@ def gen_rand_student():
 
 # tests the gen_rand_student() function
 def test():
-    print(gen_rand_student())
+    for i in range(10):
+        print(gen_rand_student())
 
 test()
