@@ -4,10 +4,11 @@ Topher Lovers
 SoftDev
 K04: Random Student Generation from Dictionary
 2024-09-13
-0.2 HR
+time-spent: 0.2 HR
 '''
 import random
 
+# A dictionary with SoftDev period as the key and list of students in that period as the corresponding value
 krewes = {
     4: [ 
         'DUA','TAWAB','EVA','JACK','VICTOR','EVAN','JASON','COLYI','IVAN','TANZEEM',
@@ -24,8 +25,13 @@ krewes = {
     }
 
 def gen_rand_student():
+    # generates a random period
     rand_period = list(krewes.keys())[random.randint(0, len(krewes) - 1)]
+    # generates a random dev from the generated random period
     rand_devo = krewes[rand_period][random.randint(0, len(krewes[rand_period]) - 1)]
     return rand_devo
 
-print(gen_rand_student())
+def test():
+    print(gen_rand_student())
+
+test()
