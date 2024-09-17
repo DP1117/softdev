@@ -24,6 +24,7 @@ krewes = {
         ]
     }
 
+# generates a random student from any period in the krewes dictionary
 def gen_rand_student():
     # generates a random period
     rand_period = list(krewes.keys())[random.randint(0, len(krewes) - 1)]
@@ -31,6 +32,7 @@ def gen_rand_student():
     rand_devo = krewes[rand_period][random.randint(0, len(krewes[rand_period]) - 1)]
     return rand_devo
 
+# tests the gen_rand_student() function
 def test():
     print(gen_rand_student())
 
