@@ -8,7 +8,7 @@ time-spent: 0.5 HR
 '''
 import random
 
-# generates a dictionary from a file containing a list of devos, their period, and their ducky name 
+# generates a list of dictionaries from a file containing a list of devos, their period, and their ducky name 
 def gen_dict(file_name):
     # read file
     file = open(file_name, "r")
@@ -17,29 +17,22 @@ def gen_dict(file_name):
 
     # list of devos, their period, and their ducky name
     devos = devo_content.split("@@@")
-    krewes = {}
+    krewes = []
 
-    # generates the dictionary with period number as the key and a list
-    # containing lists of devo and ducky names as the value
+    # generates the list of dictionaries
     for devo in devos:
         devo_info = devo.split("$$$")
-        period = devo_info[0]
-        if not period in list(krewes.keys()):
-            krewes[period] = []
-        krewes[period].append(devo_info[1:len(devo_info)])
+        krewes.append({'period': devo_info[0], 'devo': devo_info[1], 'ducky': devo_info[2]})
     return krewes
 
-# generates a random student's info from any period in the krewes dictionary
-def gen_rand_student(krewes):
-    # generates a random period
-    rand_period = list(krewes.keys())[random.randint(0, len(krewes) - 1)]
-    # generates a random devo's info from the generated random period
-    rand_devo_info = krewes[rand_period][random.randint(0, len(krewes[rand_period]) - 1)]
-    return [rand_period, rand_devo_info[0], rand_devo_info[1]]
+
+# generates a random devo
+def gen_rand_devo(krewes):
+    return krewes[random.randint(0, len(krewes) - 1)]
 
 def test():
     krewes = gen_dict("krewes.txt")
-    rand_devo_info = gen_rand_student(krewes)
+    rand_devo_info = gen_rand_devo(krewes)
     print(rand_devo_info)
 
 test()
