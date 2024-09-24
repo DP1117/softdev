@@ -34,8 +34,17 @@ def gen_rand_job():
         # decrease random float by the percentage until it is less than 0
         rand -= float(rows[i][1])
         if rand <= 0:
-            rand_job = f"{columns[0]}: {job_dict[columns[0]][i - 1]}\n{columns[1]}: {job_dict[columns[1]][i -  1]}"
+            rand_job = f"Random {columns[0]}: {job_dict[columns[0]][i - 1]}\n{columns[1]}: {job_dict[columns[1]][i -  1]}"
             break
-    return str(job_dict[columns[0]]) + "\n" + rand_job
-    
+    return "<h1>Topher's Lovers (PD 5)</h1>" + "<h2>Jobs:</h2>" + gen_html_table(job_dict[columns[0]]) + "<br><h2>" + rand_job + "</h2>"
+
+def gen_html_table(l):
+    table = '''<table border="1">'''
+    for element in l:
+        table += f'''<tr>
+                        <td>{element}</td>
+                     </tr>\n'''
+    table += "\n</table>"
+    return table
+app.debug = True
 app.run()
