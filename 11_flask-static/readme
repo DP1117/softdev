@@ -1,0 +1,6 @@
+Prediction:
+
+Before uncommenting the h() function, static/foo.html will display "Is this plaintext, though?"
+After uncommenting the h() function, flask will display a random number on static/foo.html
+
+Our predictions were correct! 
