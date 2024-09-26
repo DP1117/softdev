@@ -42,6 +42,11 @@ def test_tmplt():
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     return render_template( 'model_tmplt.html', foo="fooooo", collection=coll)
 
+imag = ["static/topher1.png", "static/topher2.png"]
+
+@app.route("/topher_page") 
+def topher_page():
+    return render_template('topher_tmplt.html', images = imag)
 
 if __name__ == "__main__":
     app.debug = True
