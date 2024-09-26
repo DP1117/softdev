@@ -20,6 +20,12 @@ def h():
     print(__name__)
     return str(random.random())
 
+@app.route("/static/fixie.html")
+def fixie():
+    print("the __name__ of this module is... ")
+    print(__name__)
+    return "<h1>Topher's Lovers</h1> <h2>Members:</h2>  Daniel Park, Will Nzeuton, Benjamin"
+
 if __name__ == "__main__":  # true if this file NOT imported
     app.debug = True        # enable auto-reload upon code change
     app.run()
