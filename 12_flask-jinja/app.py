@@ -17,8 +17,6 @@ Third argument: Replaces collection variable in the template with coll list.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 """
 
-
-
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Q0: What will happen if you remove render_template from the following statement?
 # (log prediction before executing...)
@@ -41,12 +39,6 @@ def test_tmplt():
     # Q2: What is the significance of each argument? Simplest, most concise answer best.
     #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     return render_template( 'model_tmplt.html', foo="fooooo", collection=coll)
-
-imag = ["static/topher1.png", "static/topher2.png"]
-
-@app.route("/topher_page") 
-def topher_page():
-    return render_template('topher_tmplt.html', images = imag)
 
 if __name__ == "__main__":
     app.debug = True
