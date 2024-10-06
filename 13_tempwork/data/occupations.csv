@@ -1,24 +1,24 @@
-Job Class,Percentage
-Management,6.1
-Business and Financial operations,5
-Computer and Mathematical,2.7
-Architecture and Engineering,1.7
-"Life, Physical and Social Science",0.9
-Community and Social Service,1.6
-Legal,0.8
-"Education, training and library",6.1
-"Arts, design, entertainment, sports and media",1.7
-Healthcare practioners and technical,5.5
-Healthcare support,2.8
-Protective service,2.3
-Food preparation and serving,8.3
-Building and grounds cleaning and maintenance,3.7
-Personal care and service,4
-Sales,10.2
-Office and administrative support,15.1
-"Farming, fishing and forestry",0.6
-Construction and extraction,4.3
-"Installation, maintenance and repair",3.8
-Production,6.1
-Transportation and material moving,6.5
-Total,99.8
+Job Class,Percentage,Resource
+Management,6.1,https://www.indeed.com/career-advice/finding-a-job/getting-into-management
+Business and Financial operations,5,https://aafa.com/blog/how-to-begin-a-career-in-finance
+Computer and Mathematical,2.7,https://aafa.com/blog/how-to-begin-a-career-in-finance
+Architecture and Engineering,1.7,https://www.austintec.com/6-tips-entry-level-engineering-job/
+"Life, Physical and Social Science",0.9,https://www.bls.gov/ooh/life-physical-and-social-science/
+Community and Social Service,1.6,https://www.bls.gov/ooh/community-and-social-service/
+Legal,0.8,https://l.ny.nyc.associationcareernetwork.com/
+"Education, training and library",6.1,https://www.nysut.org/resources/special-resources-sites/look-at-teaching/becoming-a-teacher-legacy
+"Arts, design, entertainment, sports and media",1.7,https://visualartspassage.com/blog/how-to-get-into-art-school/
+Healthcare practioners and technical,5.5,https://www.bls.gov/oes/2023/may/oes290000.htm
+Healthcare support,2.8,https://www.indeed.com/q-healthcare-support-l-new-york,-ny-jobs.html?vjk=acd7d4a30d2eb217
+Protective service,2.3,https://www.ziprecruiter.com/Jobs/Security-Protective-Services/-in-New-York-City,NY
+Food preparation and serving,8.3,https://www.onetonline.org/find/family?f=35
+Building and grounds cleaning and maintenance,3.7,https://powerfulgeography.org/k-12-education/resources/geography-in-jobs-and-careers-pages/building-and-grounds-cleaning-job-summaries/
+Personal care and service,4,https://www.cms.gov/medicare/medicaid-coordination/states/personal-care-services
+Sales,10.2,https://www.linkedin.com/jobs/sales-jobs-new-york?position=1&pageNum=0
+Office and administrative support,15.1,https://nib.org/services/operational/administrative-support/
+"Farming, fishing and forestry",0.6,https://forms.act.org/vtc/psa/farming.html
+Construction and extraction,4.3,https://www.bls.gov/oes/current/oes470000.htm
+"Installation, maintenance and repair",3.8,https://pathwayplanit.com/Clusters/Manufacturing/Maintenance-Installation-Repair
+Production,6.1,https://careers.paramount.com/job/New-York-Producer%2C-Super-Desk-NY-10019/1207049200/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic
+Transportation and material moving,6.5,https://new.mta.info/careers/bus-operator
+Total,99.8,2,-

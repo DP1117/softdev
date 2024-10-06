@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html>
-
-  <head>
-    <title> {{ title }} </title>
-  </head>
-
-  <body>
-    <table>
-        <tr>
-            <th>Job Percentage</th>
-            <th>Occupation</th>
-            <th>Resources</th>
-        </tr>
-        {% for i in range(len(occupations[0])) %}
+    <head>
+        <title> {{ title }} </title>
+    </head>
+    <body>
+        <h2>Here are some job options, the percent of people who hold them, and resources on getting into that field.</h2>
+        <h3>Blue Stuff</h3>
+        <h4>Will Nzeuton, Daniel Park</h4>
+        <h4> Your job is: <i>{{job}}</i></h4>
+        <table border="2">
             <tr>
-            {% for j in range(len(occupations)) %}
-                <td>
-                    {{ }}
-                </td>
-             {% endfor %}
+                <th> Occupation </th>
+                <th> Percentage </th>
+                <th> Resource </th>
             </tr>
-        {% endfor %}
-    </table>
-  </body>
+            {% for i in range(occupations|length) %}
+                <tr>
+                    {% for key in occupations[i] %}
+                        {% if key == occupations[i][2] %}
+                            <td> <a href={{key}}>{{key}}</a></td>
+                        {% else %}
+                            <td> {{ key }} </td>
+                        {% endif %}
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+        </br>
+        
+    </body>
 </html>
