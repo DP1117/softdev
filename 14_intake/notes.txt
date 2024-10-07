@@ -1,0 +1,9 @@
+Request username argument:
+There is an error because you aren't fulfilling the request for a username argument. You can pass in a username arguement by doing ?username.
+
+HTML Forms with Flask
+When submitting a HTML form, it fills the header with the following information:
+    1) The name of the inputs are passed in as arguments in the header.
+    2) The submmited values fill in the input arguments in the header
+
+usernmae = "dp"
