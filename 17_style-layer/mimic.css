@@ -1,0 +1,10 @@
+h1 {
+    color: white;
+    background-color: gray;
+    text-align: center;
+}
+
+p {
+    float: right;
+    width: 20%;
+}
