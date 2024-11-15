@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'dm-sans': ['"DM Sans"', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth; /* Enables smooth scrolling */
+    }
+
+    /* Extra margin for the features section to make sure it doesn't go under the navbar */
+    #features {
+      margin-top: 80px;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-b from-black to-gray-900 text-white">
+  <!-- Header Section -->
+  <header class="absolute inset-x-0 top-0 z-50">
+    <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <div class="flex lg:flex-1">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only">Parking Inc.</span>
+          <!-- Custom Logo -->
+          <img src="XBXLOBOG.svg" alt="Parking Inc. Logo" class="h-8 w-auto">
+        </a>
+      </div>
+      <div class="flex">
+        <!-- "About Us" button in the top right -->
+        <a href="#about" class="rounded-md bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500">
+          About Us
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Hero Section -->
+  <div class="relative isolate px-6 pt-32 lg:px-8">
+    <div class="mx-auto max-w-2xl text-center">
+      <h1 class="text-5xl font-bold font-dm-sans tracking-tight sm:text-7xl">
+        Tailwind CSS
+      </h1>
+      <p class="mt-8 text-lg font-medium text-gray-300 sm:text-xl">
+        Create beautiful, responsive designs quickly with utility-first CSS.
+      </p>
+      <div class="mt-10 flex items-center justify-center gap-x-6">
+        <!-- "Get Started" button in the middle -->
+        <a href="#features" class="rounded-md bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-md hover:bg-indigo-500">
+          Get Started
+        </a>
+        <a href="404.html" class="text-sm font-semibold text-gray-300 hover:text-white">Learn More <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Why Use Tailwind Section -->
+  <div id="why-use" class="px-6 py-16 max-w-7xl mx-auto">
+    <h2 class="text-4xl font-bold text-center text-white mb-8">Why Tailwind?</h2>
+    <p class="text-lg text-gray-300 text-center">
+      Tailwind CSS is a utility-first framework that offers its own spin on CSS compared to traditional CSS frameworks like Bootstrap or Foundation. Instead of writing your own custom CSS or being stuck with predetermined utilities, Tailwind allows you to apply utility classes directly to HTML elements. This allows you to have full control over your designs as it can be easily changed to suit your needs, while not requiring you to write everything yourself. 
+    </p>
+    <p class="mt-4 text-lg text-gray-300 text-center">
+      Unlike traditional CSS, in which you have to write your own custom styles for every component, Tailwind lets you design your layout by combining pre-defined utility classes. This means you won’t need EXTREMELY LONG custom stylesheets and allows for website creation to take minutes instead of hours.
+    </p>
+    <p class="mt-4 text-lg text-gray-300 text-center">
+      Below we will show examples of features that Tailwind offers.
+    </p>
+  </div>
+
+  <!-- Features Section -->
+  <div id="features" class="bg-gray-800 py-16">
+    <div class="max-w-6xl mx-auto px-4">
+
+      <!-- Feature 1: Button Component -->
+      <div class="flex items-center mb-12">
+        <div class="w-1/2 pr-8">
+          <p class="text-lg text-gray-300 mb-4">
+            Tailwind makes it easy to create styled buttons. The example above shows a simple button with a hover effect and rounded corners. Tailwind offers many built-in utilities like padding (`px-6`, `py-3`), background color (`bg-indigo-600`), and hover states (`hover:bg-indigo-700`).
+          </p>
+        </div>
+        <div class="w-1/2">
+          <button class="px-6 py-3 text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg shadow-md focus:outline-none">
+            Example Button
+          </button>
+        </div>
+      </div>
+
+      <!-- Feature 2: Card Component -->
+      <div class="flex items-center mb-12">
+        <div class="w-1/2 pr-8">
+          <p class="text-lg text-gray-300 mb-4">
+            This card layout uses Tailwind's utilities like `max-w-sm`, `bg-white`, `rounded-lg`, and `shadow-lg` to create a clean, responsive card component with an image, title, and description.
+          </p>
+        </div>
+        <div class="w-1/2">
+          <div class="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="https://via.placeholder.com/400x250" alt="Card image" class="w-full h-56 object-cover">
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-gray-800">Card Title</h3>
+              <p class="mt-2 text-gray-600">Tailwind CSS lets you easily create card components with utilities like `max-w-sm`, `bg-white`, `rounded-lg`, and `shadow-lg`.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 3: Grid Layout -->
+      <div class="flex items-center mb-12">
+        <div class="w-1/2 pr-8">
+          <p class="text-lg text-gray-300 mb-4">
+            Tailwind's grid system allows you to create responsive grid layouts easily. Here's an example of a 3-column grid using Tailwind's grid classes like `grid-cols-1`, `sm:grid-cols-2`, and `lg:grid-cols-3`.
+          </p>
+        </div>
+        <div class="w-1/2">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-indigo-600 p-6 text-white text-center rounded-lg shadow-lg">Column 1</div>
+            <div class="bg-indigo-600 p-6 text-white text-center rounded-lg shadow-lg">Column 2</div>
+            <div class="bg-indigo-600 p-6 text-white text-center rounded-lg shadow-lg">Column 3</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 4: Responsive Image -->
+      <div class="flex items-center mb-12">
+        <div class="w-1/2 pr-8">
+          <p class="text-lg text-gray-300 mb-4">
+            With Tailwind, you can create responsive images by applying the `w-full` class to make the image width 100% of its container. The `h-auto` class ensures the height adjusts accordingly to maintain the aspect ratio.
+          </p>
+        </div>
+        <div class="w-1/2">
+          <img src="800x400.png" alt="Responsive image" class="w-full h-auto rounded-lg shadow-lg">
+        </div>
+      </div>
+
+<!-- Feature 5: Toggle Switches -->
+<div class="flex items-center mb-12">
+  <div class="w-1/2 pr-8">
+    <p class="text-lg text-gray-300 mb-4">
+      Tailwind also allows you to easily create toggle switches. Below are examples of different toggle switches created with Tailwind.
+    </p>
+  </div>
+  <div class="w-1/2 space-y-8">
+    <!-- Toggle Switch -->
+    <div class="flex items-center space-x-4">
+      <span class="text-gray-300">Toggle Switch:</span>
+      <label class="relative inline-flex items-center cursor-pointer">
+        <!-- Hidden Checkbox -->
+        <input type="checkbox" class="sr-only peer" />
+        <!-- Toggle Background -->
+        <div class="w-11 h-6 bg-gray-200 rounded-full peer-checked:bg-indigo-600 peer-focus:ring-2 peer-focus:ring-indigo-500 peer-focus:ring-offset-2 transition">
+          <!-- Toggle Circle -->
+          <div class="absolute left-0.5 top-0.5 w-5 h-5 bg-white rounded-full shadow transform peer-checked:translate-x-5 transition"></div>
+        </div>
+      </label>
+    </div>
+    
+  </div>
+</div>
+
+
+  <!-- About Us Section -->
+  <footer id="about" class="bg-gray-800 py-16 mt-20">
+    <div class="text-center max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-white font-dm-sans">About Us</h2>
+      <p class="mt-4 text-gray-300">
+        Thanks for scrolling all the way to the bottom! Parking Inc. has a goal to educate the masses about Tailwind CSS and how it is superior over manual CSS and other utilities such as Bootstrap or Foundation. Our parent company XBXLOBOG aims to create and spread open-source projects.  
+      </p>
+      <p class="mt-8 text-sm text-gray-500">&copy; 2024 Parking Inc. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
