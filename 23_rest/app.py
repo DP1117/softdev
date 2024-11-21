@@ -16,4 +16,6 @@ page_content = json.loads(uResp.read())
 def index():
     return render_template('main.html', explanation = page_content['explanation'], image = page_content['hdurl'])
 
-app.run()
+if __name__ == "__main__":
+    app.debug = True
+    app.run()
