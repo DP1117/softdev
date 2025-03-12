@@ -1,0 +1,19 @@
+<!-- new_story.html -->
+
+{% extends "base.html" %}
+{% block title %}New Story{% endblock %}
+{% block content %}
+    <h2>Create a New Story</h2>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.title.label }}
+            {{ form.title }}
+        </div>
+        <div>
+            {{ form.content.label }}
+            {{ form.content }}
+        </div>
+        <button type="submit">{{ form.submit }}</button>
+    </form>
+{% endblock %}

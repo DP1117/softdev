@@ -1,0 +1,41 @@
+Scenario One: Your team has been contracted to create a collaborative storytelling game/website, with the following features:
+
+    Users will have to register to use the site.
+    Logged-in users can either start a new story or add to an existing story.
+    When adding to a story,
+        Users are shown only the latest update to the story, not the whole thing.
+        A user can then add some amount of text to the story.
+    Once a user has added to a story, they cannot add to it again.
+    When creating a new story,
+        Users get to start with any amount of text and give the story a title.
+        Logged in users will be able to read any story they have contributed to on their homepage (the landing page after login).
+
+Project Guidelines:
+    Flask will serve as your web server/delivery framework.
+    SQLite3 will serve as your backend data storage system.
+        As you grown your "sql-fu", always start with Devo Knowledge Base (QAF, n&c) and primary documentation. (...and if none of these have the answer you seek, and you find a SO post that is actually useful, or any other diamond in the rough of the Intertrash, add it to Devo KB)
+        Get creative, think boldly, get your hands dirty as you experiment via the sqlite3 shell and see what works/sticks...
+    Multiple Python files should be used, as necessary, for application layer. (a.k.a. "middleware" modules, etc.)
+    CSS: You may provide your own IFF...
+        your site is fully functional with CSS is stripped away.
+        you store it in the appropriate location for flask to use it.
+        it is all written by you
+    Use Q&A forum liberally. "A rising tide lifts all boats."
+    Reminder: include heading as comment in all source files.
+    Platinum Rule: THOUST APP SHALT NOT FAIL.
+
+
+path/to/your/workshop$ tree k35
+app/
+    __init__.py
+    static/
+        css/          ( O P T I O N A L )
+    templates/
+chatlog.txt
+log.txt
+flag.jpg
+README.md
+requirements.txt
+
+chatlog.txt will contain ONLY copied conversations with you, the chatbot.
+go start programming now
