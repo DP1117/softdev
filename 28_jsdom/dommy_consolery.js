@@ -99,11 +99,34 @@ var stripe = function()
     }
 };
 
+<<<<<<< HEAD
 
 //insert your implementations here for...
 // FIB
 // FAC
 // GCD
+=======
+let fib = function(n){
+    if(n < 2){
+        return n;
+    }
+    return fib(n - 1) + fib(n - 2)
+}
+
+let fact = function(n){
+    if(n == 0){
+        return 1;
+    } 
+    return n * fact(n - 1)
+}
+
+let gcd = function (a, b) {
+    if (b === 0) {
+      return a;
+    }
+    return gcd(b, a % b);
+  }
+>>>>>>> d7fdde8e555f2da1b43468e24f31e7a9a401ed7c
 
 
 // In addition to the style shown above,
@@ -113,5 +136,8 @@ const myFxn = (param1, param2) => {
     // body
     return retVal;
 };
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> d7fdde8e555f2da1b43468e24f31e7a9a401ed7c
