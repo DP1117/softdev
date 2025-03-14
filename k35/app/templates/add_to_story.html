@@ -1,16 +1,17 @@
-<!-- add_to_story.html -->
-
-{% extends "base.html" %}
-{% block title %}Add to Story{% endblock %}
-{% block content %}
-    <h2>Add to Story: {{ latest_contribution.story.title }}</h2>
-    <p>Latest Contribution: {{ latest_contribution.content }}</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Story</title>
+</head>
+<body>
+    <h1>Add to Story</h1>
+    <p>{{ latest_update[0] }}</p>
     <form method="POST">
-        {{ form.hidden_tag() }}
-        <div>
-            {{ form.content.label }}
-            {{ form.content }}
-        </div>
-        <button type="submit">{{ form.submit }}</button>
+        <label for="content">Content:</label>
+        <textarea id="content" name="content" required></textarea>
+        <button type="submit">Add to Story</button>
     </form>
-{% endblock %}
+</body>
+</html>

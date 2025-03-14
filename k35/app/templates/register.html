@@ -1,27 +1,18 @@
-<!-- register.html -->
-
-{% extends "base.html" %}
-{% block title %}Register{% endblock %}
-{% block content %}
-    <h2>Register</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h1>Register</h1>
     <form method="POST">
-        {{ form.hidden_tag() }}
-        <div>
-            {{ form.username.label }}
-            {{ form.username }}
-        </div>
-        <div>
-            {{ form.email.label }}
-            {{ form.email }}
-        </div>
-        <div>
-            {{ form.password.label }}
-            {{ form.password }}
-        </div>
-        <div>
-            {{ form.confirm_password.label }}
-            {{ form.confirm_password }}
-        </div>
-        <button type="submit">{{ form.submit }}</button>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Register</button>
     </form>
-{% endblock %}
+</body>
+</html>

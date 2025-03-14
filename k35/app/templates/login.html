@@ -1,19 +1,18 @@
-<!-- login.html -->
-
-{% extends "base.html" %}
-{% block title %}Login{% endblock %}
-{% block content %}
-    <h2>Login</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
     <form method="POST">
-        {{ form.hidden_tag() }}
-        <div>
-            {{ form.email.label }}
-            {{ form.email }}
-        </div>
-        <div>
-            {{ form.password.label }}
-            {{ form.password }}
-        </div>
-        <button type="submit">{{ form.submit }}</button>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Login</button>
     </form>
-{% endblock %}
+</body>
+</html>
